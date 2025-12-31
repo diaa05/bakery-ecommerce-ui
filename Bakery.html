@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: antiquewhite;
+            background-repeat: no-repeat;
+            position: static;
+            background-position: center;
+            background-size: cover;
+        }
+        header {
+            color: black;
+            padding: 1rem;
+        }
+        .navbar .logo img {
+            background-position: left;
+            width: 400px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black;
+            height: 1.0;
+            text-decoration: none;
+        }
+        nav{
+            font-family: 'Prompt', sans-serif;
+        }
+        .filters button {
+            margin: 10px;
+            padding: 20px;
+            cursor: pointer;
+            font-family: 'Prompt', sans-serif;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            transition: scale 1s ease-in-out;
+            background-color: whitesmoke
+        }
+        .product:hover{
+            transform: scale(1.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .checkout {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="filters">
+        <button>All</button>
+        <button>Cakes & Cupcakes</button>
+        <button>Pastries & Croissants</button>
+        <button>Muffins & Scones</button>
+        <button>Cookies & Biscuits</button>
+    </section>
+    
+    <section class="product-grid">
+        <div class="product">
+            <img src="https://www.recipetineats.com/wp-content/uploads/2016/05/Chocolate-Fudge-Mud-Cake_5-680x1018.jpg" alt="Chocolate Fudge Cake">
+            <h2>Chocolate Fudge Cake</h2>
+            <p>Every bite is a perfect balance of sweetness and intense cocoa flavor, perfect for chocolate lovers</p>
+            <h4>INR 749</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.justsotasty.com/wp-content/uploads/2017/11/Mocha-Cupcakes-with-Coffee-Frosting-7.jpg" alt="Mocha Espresso Cupcake">
+            <h2>Mocha Espresso Cupcake</h2>
+            <p>Perfect for coffee lovers, this treat delivers a harmonious blend of mocha indulgence in every bite</p>
+            <h4>INR 199</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://loseweightbyeating.com/wp-content/uploads/2023/03/healthy-cinnamon-roll-recipe-scaled.jpeg" alt="Cinnamon Pastry">
+            <h2>Cinnamon Pastry</h2>
+            <p>Each bite offers a comforting, buttery texture with a delightful cinnamon aroma that fills the air</p>
+            <h4>INR 159</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://i0.wp.com/www.pardonyourfrench.com/wp-content/uploads/2023/04/French-Almond-Croissants-Bakery-Style-10.jpg?resize=668%2C1000&ssl=1" alt="Almond Croissant">
+            <h2>Almond Croissant</h2>
+            <p>Its rich, nutty flavor and delicate texture make it the perfect indulgence for any pastry lover</p>
+            <h4>INR 459</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.ahvdPyoOsgVb5We0vuadigHaK9?rs=1&pid=ImgDetMain" alt="Blueberry Muffin">
+            <h2>Blueberry Muffin</h2>
+            <p>A soft, moist muffin bursting with juicy blueberries, creating a perfect balance of sweetness and tartness</p>
+            <h4>INR 139</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://amyshealthybaking.com/wp-content/uploads/2016/10/cranberry-orange-scones-2233.jpg" alt="Cranberry Scone">
+            <h2>Cranberry Scone</h2>
+            <p>A tender, slightly crumbly scone filled with tart cranberries, balanced by a touch of sweetness</p>
+            <h4>INR 299</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.h6Wnl5jYYAOoxUo5OkekmwHaLH?rs=1&pid=ImgDetMain" alt="Chocolate Chip Cookies">
+            <h2>Chocolate Chip Cookies</h2>
+            <p>Soft and chewy with just the right amount of crunch, these chocolate chip cookies are packed with gooey, melt-in-your-mouth chocolate chunks</p>
+            <h4>INR 379</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://homebodyeats.com/wp-content/uploads/2022/12/colorful-macarons.jpg" alt="Macarons">
+            <h2>Macarons</h2>
+            <p>With vibrant colors and a variety of delightful fillings, they’re a perfect bite-sized indulgence</p>
+            <h4>INR 339</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://veronikaskitchen.com/wp-content/uploads/2020/04/20200418-IMG_3110.jpg" alt="Puff Pastry Tart">
+            <h2>Puff Pastry Tart</h2>
+            <p>A light and flaky puff pastry base topped with a rich filling, whether sweet or savory, that melts in your mouth</p>
+            <h4>INR 499</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.8i7xPSdberzJPwse9dksBAAAAA?rs=1&pid=ImgDetMain" alt="Carrot Cake">
+            <h2>Carrot Cake</h2>
+            <p>A moist and flavorful cake made with grated carrots, warm spices, and a hint of sweetness, perfectly complemented by a smooth cream cheese frosting</p>
+            <h4>INR 589</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.TUNX7J9GiIypJ7un62GriQHaLH?rs=1&pid=ImgDetMain" alt="Oatmeal Raisin Cookies">
+            <h2>Oatmeal Raisin Cookies</h2>
+            <p>Chewy and wholesome, these oatmeal raisin cookies are packed with hearty oats, sweet raisins, and a hint of cinnamon</p>
+            <h4>INR 449</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.XVfMJvPEbTea6nJ8XQbAcgHaLH?rs=1&pid=ImgDetMain" alt="Walnut Brownie">
+            <h2>Walnut Brownie</h2>
+            <p>A rich, fudgy brownie filled with crunchy, toasted walnuts that add a perfect nutty contrast to the smooth chocolate</p>
+            <h4>INR 229</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://goodthingsbaking.com/wp-content/uploads/2019/05/French-Croissants-11.jpg" alt="Butter Croissant">
+            <h2>Butter Croissant</h2>
+            <p>Its light, airy texture and rich flavor make it the perfect indulgence for any time of day</p>
+            <h4>INR 369</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://somebodyfeedseb.com/wp-content/uploads/2022/04/2022.04.10-Sourdough-Pain-Au-Chocolate-8229-683x1024.jpg" alt="Pain au Chocolat">
+            <h2>Pain au Chocolat</h2>
+            <p>A buttery, flaky croissant filled with rich, melting dark chocolate, creating the perfect balance of sweet and savory</p>
+            <h4>INR 399</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://sugarspunrun.com/wp-content/uploads/2017/12/Gingerbread-Cookie-Recipe-1-of-1-8.jpg" alt="Gingerbread Cookie">
+            <h2>Gingerbread Cookie</h2>
+            <p>A warm, spiced cookie made with molasses, ginger, and cinnamon, offering a comforting blend of sweet and spicy flavors</p>
+            <h4>INR 319</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.fatforweightloss.com.au/wp-content/uploads/2019/07/DSC_0929-681x1024.jpg" alt="New York Cheesecake">
+            <h2>New York Cheesecake</h2>
+            <p>Set on a buttery graham cracker crust, it's a timeless dessert that melts in your mouth with every bite</p>
+            <h4>INR 789</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://brynnasbakery.weebly.com/uploads/1/2/3/8/123891899/s759173083781451965_p5_i1_w650.jpeg" alt="Lemon Poppy Seed Muffin">
+            <h2>Lemon Poppy Seed Muffin</h2>
+            <p>A light and fluffy muffin bursting with zesty lemon flavor, complemented by the subtle crunch of poppy seeds</p>
+            <h4>INR 169</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2021/01/Lemon-Pound-Cake3-768x1152.jpg" alt="Lemon Pound Cake">
+            <h2>Lemon Pound Cake</h2>
+            <p>A moist, tender pound cake infused with bright, refreshing lemon flavor, and topped with a sweet, tangy glaze</p>
+            <h4>INR 629</h4>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <p>Total: INR</p>
+        <button>Proceed to Payment</button>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 My Online Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
